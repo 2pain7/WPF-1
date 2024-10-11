@@ -27,5 +27,39 @@ namespace WpfApp2
         }
 
        
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Разработчик: Peshich D.; Версия: 0.0.1");
+        }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            if (Red.IsChecked == true)
+            {
+                Wind.Background = Brushes.LightPink ;
+            }
+        }
+
+        private void Green_Checked(object sender, RoutedEventArgs e)
+        {
+            if (Green.IsChecked == true)
+            {
+                Wind.Background = Brushes.LightGreen;
+            }
+        }
+
+        private void Blue_Checked(object sender, RoutedEventArgs e)
+        {
+            if (Blue.IsChecked == true)
+            {
+                Wind.Background = Brushes.LightBlue;
+            }
+        }
     }
 }
