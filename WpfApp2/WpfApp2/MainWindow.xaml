@@ -20,29 +20,25 @@
                 <MenuItem Header="Справка" />
             </MenuItem>
         </Menu>
-        <ToolBar HorizontalAlignment="Left" Margin="15,68,0,265" VerticalAlignment="Stretch" Width="290">
-            <Button>
+        <ToolBar HorizontalAlignment="Left" Margin="15,68,0,265" VerticalAlignment="Stretch" Width="232">
+            <Button Click="Button_Click"  ToolTip="Закрыть программу!" Height="66" Margin="0,10,0,5" Width="68" >
                 <Image Source="C:\Users\student\Pictures\64498.png" Width="72"></Image>
             </Button>
             <Separator/>
-            <Button>
-                <Image Source="C:\Users\student\Pictures\6152113.png" Height="70" Width="69"></Image>
-            </Button>
-            <ComboBox Height="17" Margin="0,34,0,29" Width="19">
+            <Button/>
+            <ComboBox Name="comboBox"  Height="19" Margin="0,34,0,28" Width="48" SelectionChanged="ComboBox_SelectionChanged"  ToolTip="Поменяй цвет фона!" >
                 <ListBoxItem>Red</ListBoxItem>
                 <ListBoxItem>Green</ListBoxItem>
                 <ListBoxItem>Blue</ListBoxItem>
             </ComboBox>
             <Separator/>
-            <Button>
+            <Button Click="Button_Click_1"  ToolTip="Узнай о авторе!" >
                 <Image Source="C:\Users\student\Pictures\pngtree-vector-document-icon-png-image_4141989.jpg" Width="62" Height="59"></Image>
             </Button>
         </ToolBar>
-        <StatusBar Margin="3,385,8,0">
+        <StatusBar Margin="0,385,0,0">
             <TextBlock  Text="Сохранение документа..."/>
-            <StatusBarItem HorizontalAlignment="Right">
-                <TextBlock Text="Подключение к БД:ОК"/>
-            </StatusBarItem>
+            <StatusBarItem HorizontalAlignment="Right" Width="124"/>
 
         </StatusBar>
     </Grid>

@@ -23,7 +23,6 @@ namespace WpfApp2
         public MainWindow()
         {
             InitializeComponent();
-            
         }
 
        
@@ -60,6 +59,32 @@ namespace WpfApp2
             {
                 Wind.Background = Brushes.LightBlue;
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (comboBox.SelectedIndex == 1)
+            {
+                Wind.Background = Brushes.LightGreen;
+            }
+            else if (comboBox.SelectedIndex == 2)
+            {
+                Wind.Background = Brushes.LightBlue;
+            }
+            else if (comboBox.SelectedIndex == 0)
+            {
+                Wind.Background = Brushes.LightPink;
+            }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Разработчик: Peshich D.; Версия: 0.0.1");
         }
     }
 }
