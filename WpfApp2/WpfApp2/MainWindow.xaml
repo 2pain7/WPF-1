@@ -7,42 +7,38 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Отправить запрос" HorizontalAlignment="Left" Margin="19,145,0,0" VerticalAlignment="Top" Width="142" Click="Button_Click"/>
-        <CheckBox x:Name="Check" Content="Закрыть по завершинию" HorizontalAlignment="Left" Margin="20,186,0,0" VerticalAlignment="Top" Checked="Check_Checked"/>
-        <RadioButton x:Name="ZD" Content="Загрузка с ЖД" HorizontalAlignment="Left" Margin="30,226,0,0" VerticalAlignment="Top" Checked="ZD_Checked"/>
-        <RadioButton x:Name="DVD" Content="Загрузка с  ДВД" HorizontalAlignment="Left" Margin="30,247,0,0" VerticalAlignment="Top" Checked="DVD_Checked"/>
-        <RadioButton x:Name="OS" Content="Установить ОС" HorizontalAlignment="Left" Margin="27,268,0,0" VerticalAlignment="Top" Checked="OS_Checked"/>
-        <ComboBox HorizontalAlignment="Left" Margin="32,296,0,0" VerticalAlignment="Top" Width="120">
-            <ListBoxItem>Red</ListBoxItem>
-            <ListBoxItem>Green</ListBoxItem>
-            <ListBoxItem>Blue</ListBoxItem>
-        </ComboBox>
-        <Slider HorizontalAlignment="Left" Margin="39,339,0,0" VerticalAlignment="Top" Width="128" RenderTransformOrigin="-0.412,2.136"/>
-        <Menu HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="139" Margin="19,29,0,0">
-            <MenuItem Header="_Файл">
-                <MenuItem Header="_Сохранить"/>
+        <Menu HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="775" Margin="8,8,0,0">
+            <MenuItem Header="_Файл" Width="66">
                 <MenuItem Header="_Закрыть"/>
-                <CheckBox>Предупреждать о ...</CheckBox>
-                <RadioButton>UTP-8</RadioButton>
-                <RadioButton>NUTP</RadioButton>
+                <TextBlock HorizontalAlignment="Right">Изменить цвет фона:</TextBlock>
+                <RadioButton>Красный</RadioButton>
+                <RadioButton>Зеленый</RadioButton>
+                <RadioButton>Синий</RadioButton>
             </MenuItem>
-            <MenuItem Header="О программе">
+            <Separator/>
+            <MenuItem Header="О программе" Height="37" Width="100">
                 <MenuItem Header="Справка"/>
             </MenuItem>
         </Menu>
-        <ToolBar HorizontalAlignment="Left" Height="65" Margin="19,67,0,0" VerticalAlignment="Top" Width="227">
+        <ToolBar HorizontalAlignment="Left" Margin="15,68,0,265" VerticalAlignment="Stretch" Width="257">
             <Button>
-                <Image Source="C:\Users\student\Pictures\1680528999_pictures-pibig-info-p-vechernii-peizazh-risunok-instagram-1.jpg" Width="72"></Image>
+                <Image Source="C:\Users\student\Pictures\64498.png" Width="72"></Image>
             </Button>
             <Separator/>
             <Button>
-                <Image Source="C:\Users\student\Pictures\ghbhjlf.jpg" Height="52" Width="69"></Image>
+                <Image Source="C:\Users\student\Pictures\6152113.png" Height="70" Width="69"></Image>
+            </Button>
+            <Separator/>
+            <Button>
+                <Image Source="C:\Users\student\Pictures\pngtree-vector-document-icon-png-image_4141989.jpg" Width="62" Height="59"></Image>
             </Button>
         </ToolBar>
-        <InkCanvas Margin="353,58,89,53" Background="Bisque">
-            <InkCanvas.DefaultDrawingAttributes>
-                <DrawingAttributes Color="Black" Height="10" Width="1"/>
-            </InkCanvas.DefaultDrawingAttributes>
-        </InkCanvas>
+        <StatusBar Margin="3,385,8,0">
+            <TextBlock  Text="Сохранение документа..."/>
+            <StatusBarItem HorizontalAlignment="Right">
+                <TextBlock Text="Подключение к БД:ОК"/>
+            </StatusBarItem>
+            
+        </StatusBar>
     </Grid>
 </Window>
