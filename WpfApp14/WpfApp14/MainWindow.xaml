@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp14.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp14"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <InkCanvas Name="Inkc" Margin="31,32,190,29" Background="LightGray" EditingMode="None" />
+
+        <RadioButton x:Name="Art" Content="Рисование" HorizontalAlignment="Left" Margin="632,259,0,0" VerticalAlignment="Top" Checked="Art_Checked"/>
+        <RadioButton x:Name="Edit" Content="Редактирование" HorizontalAlignment="Left" Margin="632,285,0,0" VerticalAlignment="Top" Checked="Edit_Checked"/>
+        <RadioButton x:Name="Del" Content="Удаление" HorizontalAlignment="Left" Margin="632,311,0,0" VerticalAlignment="Top" Checked="Del_Checked"/>
+
+        <ComboBox Name="colorComboBox" HorizontalAlignment="Left" Margin="632,79,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ColorComboBox_SelectionChanged" > 
+            <ComboBoxItem Selected="ListBoxItem_Selected" Content="Red" />
+            <ComboBoxItem Selected="ListBoxItem_Selected" Content="Green" />
+            <ComboBoxItem Selected="ListBoxItem_Selected" Content="Blue" />
+        </ComboBox>
+
+        <Slider Name="sizeSlider" HorizontalAlignment="Left" Margin="632,193,0,0" VerticalAlignment="Top" Width="128" Minimum="1" Maximum="20" ValueChanged="SizeSlider_ValueChanged"/>
+
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="640,47,0,0" TextWrapping="Wrap" Text="Цвет:" VerticalAlignment="Top" Width="98"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="638,162,0,0" TextWrapping="Wrap" Text="Размер:" VerticalAlignment="Top" Width="98"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="640,234,0,0" TextWrapping="Wrap" Text="Режим работы:" VerticalAlignment="Top" Width="98"/>
+    </Grid>
+</Window>
