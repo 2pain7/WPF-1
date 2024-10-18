@@ -36,8 +36,8 @@
                 <Image Source="C:\Users\student\Pictures\pngtree-vector-document-icon-png-image_4141989.jpg" Width="62" Height="59"></Image>
             </Button>
         </ToolBar>
-        <StatusBar Margin="0,385,0,0">
-            <TextBlock  Text="Сохранение документа..."/>
+        <StatusBar Name="StatusBar" Margin="0,385,0,0">
+            <TextBlock x:Name="Stat" Text="Сохранение документа..."/>
             <StatusBarItem HorizontalAlignment="Right" Width="124"/>
 
         </StatusBar>

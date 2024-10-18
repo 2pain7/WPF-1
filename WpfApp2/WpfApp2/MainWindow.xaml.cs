@@ -29,11 +29,14 @@ namespace WpfApp2
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
+            Stat.Text = "Справка";
             MessageBox.Show("Разработчик: Peshich D.; Версия: 0.0.1");
         }
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
+
+            Stat.Text = "Закрытие";
             this.Close();
         }
 
@@ -42,6 +45,7 @@ namespace WpfApp2
             if (Red.IsChecked == true)
             {
                 Wind.Background = Brushes.LightPink ;
+                Stat.Text = "Изменение цвета: красный";
             }
         }
 
@@ -50,6 +54,7 @@ namespace WpfApp2
             if (Green.IsChecked == true)
             {
                 Wind.Background = Brushes.LightGreen;
+                Stat.Text = "Изменение цвета: зеленый";
             }
         }
 
@@ -58,11 +63,14 @@ namespace WpfApp2
             if (Blue.IsChecked == true)
             {
                 Wind.Background = Brushes.LightBlue;
+                Stat.Text = "Изменение цвета: синий";
             }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
+            Stat.Text = "Закрытие";
             this.Close();
         }
 
@@ -71,19 +79,23 @@ namespace WpfApp2
             if (comboBox.SelectedIndex == 1)
             {
                 Wind.Background = Brushes.LightGreen;
+                Stat.Text = "Изменение цвета: зеленый";
             }
             else if (comboBox.SelectedIndex == 2)
             {
                 Wind.Background = Brushes.LightBlue;
+                Stat.Text = "Изменение цвета: синий";
             }
             else if (comboBox.SelectedIndex == 0)
             {
                 Wind.Background = Brushes.LightPink;
+                Stat.Text = "Изменение цвета: красный";
             }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            Stat.Text = "Справка";
             MessageBox.Show("Разработчик: Peshich D.; Версия: 0.0.1");
         }
     }
